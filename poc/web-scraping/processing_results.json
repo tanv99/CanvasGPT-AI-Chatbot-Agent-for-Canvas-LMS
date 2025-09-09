@@ -1,0 +1,27 @@
+[
+  {
+    "input_file": "springer_books/AI in Drug Discovery/book.pdf",
+    "output_files": {
+      "text_file": "AI in Drug Discovery/output/book.txt",
+      "image_list": "AI in Drug Discovery/output/book_image_list.txt",
+      "image_count": 62,
+      "table_count": 58
+    },
+    "status": "success"
+  },
+  {
+    "input_file": "springer_books/Architecture of Advanced Numerical Analysis Systems/book.pdf",
+    "output_files": {
+      "text_file": "Architecture of Advanced Numerical Analysis Systems/output/book.txt",
+      "image_list": "Architecture of Advanced Numerical Analysis Systems/output/book_image_list.txt",
+      "image_count": 154,
+      "table_count": 136
+    },
+    "status": "success"
+  },
+  {
+    "input_file": "springer_books/Artificial Intelligence and Cognitive Science/book.pdf",
+    "error": "[WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\tanvi\\\\AppData\\\\Local\\\\Temp\\\\tmpxdmekg93\\\\book.pdf'",
+    "status": "failed"
+  }
+]

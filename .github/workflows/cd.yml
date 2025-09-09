@@ -1,0 +1,37 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [ main, data-ingestion ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to VM
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          port: 22
+          debug: true
+          script: |
+            # Pull latest changes
+            cd ~/Final-Project
+            git fetch --all
+            git reset --hard origin/main
+
+            # Deploy Airflow
+            echo "Deploying Airflow..."
+            cd ~/Final-Project/Airflow
+            docker-compose down
+            docker-compose up -d --build
+
+            # Deploy FastAPI
+            echo "Deploying FastAPI..."
+            cd ~/Final-Project
+            docker-compose down
+            docker-compose up -d --build

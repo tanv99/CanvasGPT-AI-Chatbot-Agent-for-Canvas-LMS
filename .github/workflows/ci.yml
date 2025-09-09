@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, data-ingestion ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend  
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+    
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        
+    - name: Configure Poetry
+      run: |
+        poetry config virtualenvs.create false
+        
+    - name: Install dependencies
+      run: |
+        poetry install
+
+    - name: Debug Environment
+      run: |
+        echo "Checking for OPENAI_API_KEY presence:"
+        if [ -n "$OPENAI_API_KEY" ]; then
+          echo "OPENAI_API_KEY is set"
+        else
+          echo "OPENAI_API_KEY is NOT set"
+        fi
+        
+    - name: Run tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}/backend
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        poetry run pytest test_cases/test_webagent.py -v

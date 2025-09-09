@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Bot",
+  "version": "1.0",
+  "description": "A Chrome extension chatbot powered by ChatGPT",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

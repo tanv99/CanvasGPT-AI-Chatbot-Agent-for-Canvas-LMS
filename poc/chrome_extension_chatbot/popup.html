@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 350px;
+      height: 500px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #chat-container {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #input-container {
+      display: flex;
+      gap: 5px;
+    }
+    #user-input {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #send-button {
+      padding: 8px 15px;
+      background-color: #0084ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #send-button:disabled {
+      background-color: #cccccc;
+    }
+    .message {
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 8px;
+      max-width: 85%;
+      word-wrap: break-word;
+    }
+    .user-message {
+      background-color: #0084ff;
+      color: white;
+      margin-left: auto;
+    }
+    .bot-message {
+      background-color: #f0f0f0;
+      color: black;
+    }
+    #api-key-container {
+      margin-bottom: 10px;
+    }
+    #api-key-input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    .typing-indicator {
+      padding: 8px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="api-key-container">
+    <input type="password" id="api-key-input" placeholder="Enter your OpenAI API key">
+    <button id="save-key-button">Save API Key</button>
+  </div>
+  <div id="chat-container"></div>
+  <div class="typing-indicator">ChatGPT is typing...</div>
+  <div id="input-container">
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button id="send-button">Send</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

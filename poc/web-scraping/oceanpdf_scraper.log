@@ -1,0 +1,341 @@
+2024-11-26 20:03:56,056 - INFO - Found 7 books on page 1
+2024-11-26 20:03:56,471 - INFO - Processing book: Data Cartels
+2024-11-26 20:04:09,162 - ERROR - No PDF download link found for Data Cartels
+2024-11-26 20:04:10,745 - INFO - Successfully uploaded ocean_pdf_books/Data Cartels/metadata.json to S3
+2024-11-26 20:04:11,748 - INFO - Processing book: Data Science
+2024-11-26 20:04:24,734 - ERROR - No PDF download link found for Data Science
+2024-11-26 20:04:25,808 - INFO - Successfully uploaded ocean_pdf_books/Data Science/metadata.json to S3
+2024-11-26 20:04:26,812 - INFO - Processing book: Data Analytics
+2024-11-26 20:04:39,263 - ERROR - No PDF download link found for Data Analytics
+2024-11-26 20:04:40,444 - INFO - Successfully uploaded ocean_pdf_books/Data Analytics/metadata.json to S3
+2024-11-26 20:04:41,446 - INFO - Processing book: Boat Data Book
+2024-11-26 20:04:54,010 - ERROR - No PDF download link found for Boat Data Book
+2024-11-26 20:04:54,657 - INFO - Successfully uploaded ocean_pdf_books/Boat Data Book/metadata.json to S3
+2024-11-26 20:04:55,661 - INFO - Processing book: Big Data
+2024-11-26 20:05:01,980 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/c95676fad44f565d8ed62ed99d305f3f
+2024-11-26 20:05:06,068 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022FE46A5790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c95676fad44f565d8ed62ed99d305f3f
+2024-11-26 20:05:10,140 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022FE46A5820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c95676fad44f565d8ed62ed99d305f3f
+2024-11-26 20:05:18,325 - INFO - Scraping complete. Total books processed: 4
+2024-11-26 20:10:42,117 - INFO - Scraping page 1: https://oceanofpdf.com/?s=data
+2024-11-26 20:10:46,421 - INFO - Found 7 books on page 1
+2024-11-26 20:10:46,460 - INFO - Processing book: Sarah Lamdan
+2024-11-26 20:11:00,769 - ERROR - Error in PDF download: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF746D56CB5+28821]
+	(No symbol) [0x00007FF746CC3840]
+	(No symbol) [0x00007FF746B6578A]
+	(No symbol) [0x00007FF746BB91BE]
+	(No symbol) [0x00007FF746BB94AC]
+	(No symbol) [0x00007FF746C02647]
+	(No symbol) [0x00007FF746BDF33F]
+	(No symbol) [0x00007FF746BFF412]
+	(No symbol) [0x00007FF746BDF0A3]
+	(No symbol) [0x00007FF746BAA778]
+	(No symbol) [0x00007FF746BAB8E1]
+	GetHandleVerifier [0x00007FF74708FCAD+3408013]
+	GetHandleVerifier [0x00007FF7470A741F+3504127]
+	GetHandleVerifier [0x00007FF74709B5FD+3455453]
+	GetHandleVerifier [0x00007FF746E1BDBB+835995]
+	(No symbol) [0x00007FF746CCEB5F]
+	(No symbol) [0x00007FF746CCA814]
+	(No symbol) [0x00007FF746CCA9AD]
+	(No symbol) [0x00007FF746CBA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:11:00,827 - ERROR - Error during scraping: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF746D56CB5+28821]
+	(No symbol) [0x00007FF746CC3840]
+	(No symbol) [0x00007FF746B6578A]
+	(No symbol) [0x00007FF746B79D94]
+	(No symbol) [0x00007FF746B78844]
+	(No symbol) [0x00007FF746B6CF91]
+	(No symbol) [0x00007FF746B6ADB5]
+	(No symbol) [0x00007FF746B6EFCC]
+	(No symbol) [0x00007FF746B6F09F]
+	(No symbol) [0x00007FF746BB311B]
+	(No symbol) [0x00007FF746BDF2FA]
+	(No symbol) [0x00007FF746BAC3F6]
+	(No symbol) [0x00007FF746BDF510]
+	(No symbol) [0x00007FF746BFF412]
+	(No symbol) [0x00007FF746BDF0A3]
+	(No symbol) [0x00007FF746BAA778]
+	(No symbol) [0x00007FF746BAB8E1]
+	GetHandleVerifier [0x00007FF74708FCAD+3408013]
+	GetHandleVerifier [0x00007FF7470A741F+3504127]
+	GetHandleVerifier [0x00007FF74709B5FD+3455453]
+	GetHandleVerifier [0x00007FF746E1BDBB+835995]
+	(No symbol) [0x00007FF746CCEB5F]
+	(No symbol) [0x00007FF746CCA814]
+	(No symbol) [0x00007FF746CCA9AD]
+	(No symbol) [0x00007FF746CBA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:11:03,120 - INFO - Scraping complete. Total books processed: 0
+2024-11-26 20:14:03,875 - INFO - Extracted Title: Data Cartels
+2024-11-26 20:14:03,876 - INFO - Book URL: https://oceanofpdf.com/authors/sarah-lamdan/pdf-data-cartels-download/
+2024-11-26 20:14:03,878 - INFO - Processing book: Data Cartels
+2024-11-26 20:14:09,413 - ERROR - Failed to download PDF. Status code: 403
+2024-11-26 20:14:11,645 - INFO - Scraping complete. Total books processed: 0
+2024-11-26 20:29:58,065 - INFO - Scraping page 1: https://oceanofpdf.com/?s=data
+2024-11-26 20:30:02,849 - INFO - Processing book: Data Cartels
+2024-11-26 20:30:16,593 - ERROR - Failed to download PDF: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:30:16,595 - INFO - Processing book: Data Science
+2024-11-26 20:30:30,056 - ERROR - Failed to download PDF: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:30:30,058 - INFO - Processing book: Data Analytics
+2024-11-26 20:31:27,078 - INFO - Scraping page 1: https://oceanofpdf.com/?s=data
+2024-11-26 20:31:31,679 - INFO - Processing book: Data Cartels
+2024-11-26 20:31:42,383 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:31:42,384 - INFO - Processing book: Data Science
+2024-11-26 20:31:53,268 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:31:53,279 - INFO - Processing book: Data Analytics
+2024-11-26 20:32:03,740 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:32:03,744 - INFO - Processing book: Boat Data Book
+2024-11-26 20:32:14,340 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:32:14,348 - INFO - Processing book: Big Data
+2024-11-26 20:32:25,202 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:32:25,207 - INFO - Processing book: Data Conscience
+2024-11-26 20:32:35,732 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:32:35,734 - INFO - Processing book: Dear Data
+2024-11-26 20:32:46,308 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EE356CB5+28821]
+	(No symbol) [0x00007FF6EE2C3840]
+	(No symbol) [0x00007FF6EE16578A]
+	(No symbol) [0x00007FF6EE1B91BE]
+	(No symbol) [0x00007FF6EE1B94AC]
+	(No symbol) [0x00007FF6EE202647]
+	(No symbol) [0x00007FF6EE1DF33F]
+	(No symbol) [0x00007FF6EE1FF412]
+	(No symbol) [0x00007FF6EE1DF0A3]
+	(No symbol) [0x00007FF6EE1AA778]
+	(No symbol) [0x00007FF6EE1AB8E1]
+	GetHandleVerifier [0x00007FF6EE68FCAD+3408013]
+	GetHandleVerifier [0x00007FF6EE6A741F+3504127]
+	GetHandleVerifier [0x00007FF6EE69B5FD+3455453]
+	GetHandleVerifier [0x00007FF6EE41BDBB+835995]
+	(No symbol) [0x00007FF6EE2CEB5F]
+	(No symbol) [0x00007FF6EE2CA814]
+	(No symbol) [0x00007FF6EE2CA9AD]
+	(No symbol) [0x00007FF6EE2BA199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 20:32:46,310 - INFO - Scraping page 2: https://oceanofpdf.com/?s=data/page/2/?s=data
+2024-11-26 20:32:49,457 - INFO - Scraping page 3: https://oceanofpdf.com/?s=data/page/3/?s=data
+2024-11-26 20:32:52,598 - INFO - Scraping complete. Total books processed: 0
+2024-11-26 21:45:00,046 - INFO - Scraping page 1: https://oceanofpdf.com/?s=data
+2024-11-26 21:45:04,758 - INFO - Processing book: Data Cartels
+2024-11-26 21:45:15,348 - ERROR - Timeout while waiting for elements on page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF60DC16CB5+28821]
+	(No symbol) [0x00007FF60DB83840]
+	(No symbol) [0x00007FF60DA2578A]
+	(No symbol) [0x00007FF60DA791BE]
+	(No symbol) [0x00007FF60DA794AC]
+	(No symbol) [0x00007FF60DAC2647]
+	(No symbol) [0x00007FF60DA9F33F]
+	(No symbol) [0x00007FF60DABF412]
+	(No symbol) [0x00007FF60DA9F0A3]
+	(No symbol) [0x00007FF60DA6A778]
+	(No symbol) [0x00007FF60DA6B8E1]
+	GetHandleVerifier [0x00007FF60DF4FCAD+3408013]
+	GetHandleVerifier [0x00007FF60DF6741F+3504127]
+	GetHandleVerifier [0x00007FF60DF5B5FD+3455453]
+	GetHandleVerifier [0x00007FF60DCDBDBB+835995]
+	(No symbol) [0x00007FF60DB8EB5F]
+	(No symbol) [0x00007FF60DB8A814]
+	(No symbol) [0x00007FF60DB8A9AD]
+	(No symbol) [0x00007FF60DB7A199]
+	BaseThreadInitThunk [0x00007FFEECBD259D+29]
+	RtlUserThreadStart [0x00007FFEED7AAF38+40]
+
+2024-11-26 21:45:15,362 - INFO - Processing book: Data Science
+2024-11-26 21:45:17,735 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/df3283d7ccd6443ee52c9595b0952a9a

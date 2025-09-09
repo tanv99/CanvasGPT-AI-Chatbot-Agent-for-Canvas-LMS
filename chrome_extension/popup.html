@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Assistant</title>
+    <style>
+        body {
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        #chat-container {
+            height: 350px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+        }
+        .message {
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 8px;
+            max-width: 85%;
+            position: relative;
+        }
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            margin-left: auto;
+            margin-right: 5px;
+        }
+        .bot-message {
+            background-color: #e9ecef;
+            color: #212529;
+            margin-right: auto;
+            margin-left: 5px;
+        }
+        .timestamp {
+            font-size: 0.7em;
+            color: #6c757d;
+            position: absolute;
+            bottom: 2px;
+            right: 8px;
+        }
+        .sender-label {
+            font-size: 0.8em;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+        .message-content {
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+        .message-content p {
+            margin: 8px 0;
+        }
+        .message-content ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        .message-content li {
+            margin: 4px 0;
+        }
+        .message-content .numbered-list {
+            list-style-type: decimal;
+        }
+        .message-content .bullet-list {
+            list-style-type: disc;
+        }
+        .bot-message .message-content {
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 5px 0;
+        }
+        .bot-message .message-content p:first-child {
+            margin-top: 0;
+        }
+        .bot-message .message-content p:last-child {
+            margin-bottom: 0;
+        }
+        .bot-message .message-content ul:last-child {
+            margin-bottom: 0;
+        }
+        .bot-message .message-content strong,
+        .bot-message .message-content b {
+            color: #0056b3;
+        }
+        #input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+        }
+        #message-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            resize: none;
+            font-size: 14px;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .buttons-group {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #clear-btn {
+            background-color: #dc3545;
+        }
+        #clear-btn:hover {
+            background-color: #c82333;
+        }
+        #file-name {
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        #file-upload-description {
+            font-size: 0.7em;
+            color: #6c757d;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container"></div>
+    <div id="input-container">
+        <textarea id="message-input" rows="3" placeholder="Type your message..."></textarea>
+        <div class="controls">
+            <div class="buttons-group">
+                <input type="file" id="file-input" style="display: none" accept=".pdf,.docx,.jpg,.jpeg,.png,.csv,.xlsx">
+                <button id="upload-btn">Upload File</button>
+                <button id="send-btn">Send</button>
+            </div>
+            <button id="clear-btn">Clear Chat</button>
+        </div>
+        <div id="file-name"></div>
+        <div id="file-upload-description">
+            Accepted file types: PDF, DOCX, JPG, JPEG, PNG, CSV, XLSX (max 3 pages)
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "fast-api"
+version = "0.1.0"
+description = ""
+authors = ["Sarthak <sarthaksom10@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+langgraph = "^0.2.53"
+langchain-community = "^0.3.8"
+langchain-anthropic = "^0.3.0"
+langchain-experimental = "^0.3.3"
+pydantic = "^2.10.2"
+anthropic = "^0.40.0"
+tavily-python = "^0.5.0"
+openai = "^1.55.3"
+python-multipart = "^0.0.18"
+aiohttp = "^3.11.8"
+beautifulsoup4 = "^4.12.3"
+langchain-openai = "^0.2.10"
+duckduckgo-search = "^6.3.7"
+tenacity = "^9.0.0"
+boto3 = "^1.35.79"
+pinecone-client = "^5.0.1"
+llama-parse = "^0.5.17"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+httpx = "^0.28.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
