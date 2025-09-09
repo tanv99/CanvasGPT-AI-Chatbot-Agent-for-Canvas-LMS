@@ -253,18 +253,7 @@ The system is deployed on AWS with the following components:
    - Updates containers
    - Performs health checks
 
-### Contributions
 
-| Name                            | Percentage Contribution |
-| ------------------------------- | ----------------------- |
-| Sarthak Somvanshi               | 33%(Basic chatbot development, Agentic architecture design, Document handler, Canvas Post Agent integration & testing, Final system testing)                    |
-| Yuga Kanse                      | 33%(FastAPI endpoint development, Chrome extension LLM integration, Web & Multi-modal agent creation, Testing implementation)                  |
-| Tanvi Inchanalkar               | 33%(Data ingestion, Airflow pipeline development (S3, Snowflake, PDF processing), GCP deployment, CI/CD implementation, Documentation & Architecture diagrams)                   |
-
-
-
-### Additional Notes
-WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK. 
 
 
 
