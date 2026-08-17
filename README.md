@@ -70,10 +70,6 @@ Airflow: Airflow : http://34.162.53.77:8080/
 
 Fastapi : http://34.162.53.77:8000/
 
-Working Video link: https://drive.google.com/file/d/1p2aXtTxx_lKQm0P9EeUD-YhpTGqR-3kD/view?usp=sharing
-
-Google codelab(Final Project): https://codelabs-preview.appspot.com/?file_id=1lvm68fvyLlnEblDbiGVmN_Djr3-gZ8VGf8GeERE3J6I/edit?tab=t.0#0
-
 
 ## Cloud Development Setup
 
@@ -122,8 +118,8 @@ async function sendMessage() {
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/BigData-Fall2024-Team4/Final-Project.git
-cd Final-Project
+git clone https://github.com/tanv99/CanvasGPT-AI-Chatbot-Agent-for-Canvas-LMS.git
+
 ```
 
 2. **Environment Configuration**
